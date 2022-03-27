@@ -14,5 +14,8 @@ Example:
 }
 
 ## RDBMS VS MongoDB Terms:
-    <b> Database = database</b>
+    <b> </b>
+    <ul>
+        <li>Database = database </li>
+    </ul>
 
