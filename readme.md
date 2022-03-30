@@ -19,3 +19,25 @@ Example:
     3. Rows = documents
     4. Columns = fields
 
+`Run The Mongoshell` - mongo + enter
+`help`
+`Databases:`
+    show dbs
+    create and switch database: use databaseName
+    check which database you are in: db + enter
+    delete database: db.dropDatabase()
+
+`Collection:`
+    show collections
+    db.createCollection(name, options)
+
+`Insert data to collection:`
+db.collectionName.insertOne() => for insert single document
+
+db.collectionName.insertMany([]) => for insert multiple document
+
+`See all data: ` db.collectionName.find()
+`See all data with formating: ` db.collectionName.find().pretty()
+`See specific data: ` db.collectionName.find(name: 22) => inside find method pass the condition
+
+`See limited data with condition: ` db.collectionName.find(name: 22).limit(limit range).pretty()
