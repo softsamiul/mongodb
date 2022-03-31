@@ -5,8 +5,7 @@
     1. Documents based database system
     2. Stores data as JSON-like format
 
-Example: 
-
+`Example: `
 {
     name: "Samiul",
     age: 23,
@@ -31,13 +30,37 @@ Example:
     show collections
     db.createCollection(name, options)
 
+### Create data
+
 `Insert data to collection:`
 db.collectionName.insertOne() => for insert single document
 
 db.collectionName.insertMany([]) => for insert multiple document
 
+### Read Data
+
 `See all data: ` db.collectionName.find()
+
 `See all data with formating: ` db.collectionName.find().pretty()
+
 `See specific data: ` db.collectionName.find(name: 22) => inside find method pass the condition
 
 `See limited data with condition: ` db.collectionName.find(name: 22).limit(limit range).pretty()
+
+### Update Data
+
+`Update document: ` db.collectionName.update({condition}, {$set: {updated data}} )
+
+### Delete Data
+
+`Delete document: ` db.collectionName.deleteOne(option or condition like => name: "Samiul Islam")
+
+## MongoDB Compas
+
+
+
+
+
+
+
+
